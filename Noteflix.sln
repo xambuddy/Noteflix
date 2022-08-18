@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noteflix.API", "Noteflix.API\Noteflix.API.csproj", "{5B7671DA-B312-442C-BC7B-F488D91BAE5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noteflix.Core", "Noteflix.Core\Noteflix.Core.csproj", "{91EB08C8-D6CC-4F02-B8AC-5CD2D2F9845D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noteflix.Application", "Noteflix.Application\Noteflix.Application.csproj", "{CA3C0962-2A53-4D2E-BEF4-BC93C9765E0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noteflix.Infrastructure", "Noteflix.Infrastructure\Noteflix.Infrastructure.csproj", "{6572F998-5442-4D69-A09E-CCD88254608E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B7671DA-B312-442C-BC7B-F488D91BAE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B7671DA-B312-442C-BC7B-F488D91BAE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B7671DA-B312-442C-BC7B-F488D91BAE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B7671DA-B312-442C-BC7B-F488D91BAE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EB08C8-D6CC-4F02-B8AC-5CD2D2F9845D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EB08C8-D6CC-4F02-B8AC-5CD2D2F9845D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EB08C8-D6CC-4F02-B8AC-5CD2D2F9845D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EB08C8-D6CC-4F02-B8AC-5CD2D2F9845D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3C0962-2A53-4D2E-BEF4-BC93C9765E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3C0962-2A53-4D2E-BEF4-BC93C9765E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3C0962-2A53-4D2E-BEF4-BC93C9765E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3C0962-2A53-4D2E-BEF4-BC93C9765E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6572F998-5442-4D69-A09E-CCD88254608E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6572F998-5442-4D69-A09E-CCD88254608E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6572F998-5442-4D69-A09E-CCD88254608E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6572F998-5442-4D69-A09E-CCD88254608E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74B6D820-C9EE-443A-BC05-D761456E7252}
+	EndGlobalSection
+EndGlobal

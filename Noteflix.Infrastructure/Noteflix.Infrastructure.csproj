@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
+    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="6.1.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.29.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Noteflix.Core\Noteflix.Core.csproj" />
+  </ItemGroup>
+
+</Project>
