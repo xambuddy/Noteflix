@@ -11,7 +11,7 @@ namespace Noteflix.Infrastructure.Repositories
         {
         }
 
-        public override EntityType Type => EntityType.Note;
+        public override EntityType Type => EntityType.Notebook;
 
         public override string GenerateId(NotebookEntity entity)
         {
