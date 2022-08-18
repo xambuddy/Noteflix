@@ -18,10 +18,5 @@ namespace Noteflix.Infrastructure.Repositories
         {
             return $"{Guid.NewGuid()}";
         }
-
-        public override PartitionKey ResolvePartitionKey(string entityId)
-        {
-            return new(entityId);
-        }
     }
 }

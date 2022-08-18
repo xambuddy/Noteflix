@@ -15,12 +15,15 @@ namespace Noteflix.Core.Entities
         [JsonProperty(PropertyName = "createdBy")]
         public User CreatedBy { get; set; }
 
+        [JsonProperty(PropertyName = "notebookId")]
+        public string NotebookId { get; set; }
+
         [JsonProperty(PropertyName = "tasks")]
         public IEnumerable<NoteTask> Tasks { get; set; }
 
         public override void SetPartitionKey()
         {
-            PartitionKey = Id;
+            PartitionKey = NotebookId;
         }
     }
 }

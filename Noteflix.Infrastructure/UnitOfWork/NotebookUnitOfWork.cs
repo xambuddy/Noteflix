@@ -11,13 +11,17 @@ namespace Noteflix.Infrastructure.UnitOfWork
 
         public NotebookUnitOfWork(
         INotebooksContainerContext notebooksContainerContext,
-        INoteRepository noteRepository)
+        INoteRepository noteRepository,
+        INotebookRepository notebookRepository)
         {
             this.context = notebooksContainerContext;
             this.NoteRepository = noteRepository;
+            this.NotebookRepository = notebookRepository;
         }
 
         public INoteRepository NoteRepository { get; }
+
+        public INotebookRepository NotebookRepository { get; }
 
         public Task<List<BaseEntity>> CommitAsync(CancellationToken cancellationToken = default)
         {

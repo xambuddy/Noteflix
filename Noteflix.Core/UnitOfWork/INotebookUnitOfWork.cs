@@ -7,6 +7,8 @@ namespace Noteflix.Core.UnitOfWork
     {
         INoteRepository NoteRepository { get; }
 
+        INotebookRepository NotebookRepository { get; }
+
         Task<List<BaseEntity>> CommitAsync(CancellationToken cancellationToken = default);
     }
 }

@@ -6,6 +6,7 @@ namespace Noteflix.Core.Enums
     [JsonConverter(typeof(StringEnumConverter))]
     public enum EntityType
     {
-        Note
+        Note,
+        Notebook
     }
 }

@@ -26,8 +26,6 @@ namespace Noteflix.Infrastructure.Repositories
 
         public abstract EntityType Type { get; }
 
-        public abstract PartitionKey ResolvePartitionKey(string entityId);
-
         public void AddItem(T item)
         {
             item.Id = this.GenerateId(item);
@@ -141,5 +139,7 @@ namespace Noteflix.Infrastructure.Repositories
 
         private IQueryable<T> ApplySpecification(ISpecification<T> specification) => 
             this.specificationEvaluator.GetQuery(this.NotebooksContext.Container.GetItemLinqQueryable<T>(), specification);
+
+        private PartitionKey ResolvePartitionKey(string entityId) => new(entityId);
     }
 }

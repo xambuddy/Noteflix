@@ -19,10 +19,17 @@ namespace Noteflix.Application.Commands.Handlers
                 Title = request.Title,
                 Content = request.Content,
                 CreatedBy = request.CreatedBy,
+                NotebookId = request.NotebookId,
                 Tasks = request.Tasks,
             };
 
             this.notebookUnitOfWork.NoteRepository.AddItem(note);
+
+            var notebook = await this.notebookUnitOfWork.NotebookRepository.GetItemAsync(note.NotebookId, note.NotebookId);
+
+            notebook.PageCount++;
+
+            this.notebookUnitOfWork.NotebookRepository.UpdateItem(notebook);
 
             var result = await this.notebookUnitOfWork.CommitAsync(cancellationToken);
 

@@ -13,6 +13,8 @@ namespace Noteflix.Application.Commands
 
         public User CreatedBy { get; set; }
 
+        public string NotebookId { get; set; }
+
         public IEnumerable<NoteTask> Tasks { get; set; }
     }
 }
