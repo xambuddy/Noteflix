@@ -11,6 +11,8 @@ namespace Noteflix.Application.Models
 
         public User CreatedBy { get; set; }
 
+        public string NotebookId { get; set; }
+
         public IEnumerable<NoteTask> Tasks { get; set; }
     }
 }

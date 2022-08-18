@@ -45,6 +45,7 @@ namespace Noteflix.API
 
             services.AddScoped<INotebooksContainerContext, NotebooksContainerContext>()
                 .AddScoped<INoteRepository, NoteRepository>()
+                .AddScoped<INotebookRepository, NotebookRepository>()
                 .AddScoped<INotebookUnitOfWork, NotebookUnitOfWork>()
                 .AddMediatR(typeof(NoteEntity), typeof(CreateNoteCommand));
 
@@ -93,11 +94,23 @@ namespace Noteflix.API
                     Title = request.Title,
                     Content = request.Content,
                     CreatedBy = request.CreatedBy,
+                    NotebookId = request.NotebookId,
                     Tasks = request.Tasks,
                 };
 
                 var note = await mediator.Send(command);
                 return note;
+            });
+
+            endpoints.MapPost("/notebook", async (CreateNotebookDto request, IMediator mediator) =>
+            {
+                var command = new CreateNotebookCommand
+                {
+                    Title = request.Title
+                };
+
+                var notebook = await mediator.Send(command);
+                return notebook;
             });
         }
     }
